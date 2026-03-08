@@ -20,6 +20,7 @@
   --danger: #dc2626;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
+a { text-decoration:none; color:inherit; }
 html { scroll-behavior:smooth; }
 body { font-family:'Noto Sans KR',sans-serif; background:var(--bg); color:var(--text); overflow-x:hidden; }
 
@@ -351,21 +352,23 @@ footer p { color:rgba(255,255,255,0.6); font-size:0.88rem; margin-bottom:2rem; }
       </thead>
       <tbody>
         <tr>
-          <td style="font-weight:600;color:var(--navy);">01</td>
-          <td colspan="2"></td>
-          <td colspan="4"><span class="tbar">데이터 수집 및 전처리</span></td>
-          <td colspan="4"><span class="tbar">기본 실험 및 베이스라인</span></td>
-          <td colspan="6"><span class="tbar">증분학습 설계 및 실험</span></td>
-          <td colspan="8"><span class="tbar">졸업 논문 작성</span></td>
+          <td style="font-weight:600;color:var(--navy);">01 얼굴 인식</td>
+          <td></td>
+          <td colspan="3"><span class="tbar">데이터 수집 및 전처리</span></td>
+          <td colspan="7"><span class="tbar">기본 실험 및 베이스라인</span></td>
+          <td colspan="7"><span class="tbar">증분학습 설계 및 실험</span></td>
+          <td colspan="6"><span class="tbar">졸업 논문 작성</span></td>
         </tr>
         <tr>
-          <td style="font-weight:600;color:var(--navy);">02</td>
+          <td style="font-weight:600;color:var(--navy);">02 패턴 분류</td>
           <td colspan="3"></td>
-          <td colspan="3"><span class="tbar lt">데이터 생성</span></td>
-          <td colspan="5"><span class="tbar lt">파이프라인 설계 및 실험</span></td>
-          <td colspan="4"><span class="tbar lt">논문 작성</span></td>
-          <td colspan="6"><span class="tbar lt">데이터 생성 및 논문 리비전</span></td>
-          <td colspan="3"></td>
+          <td colspan="2"><span class="tbar lt">데이터 생성</span></td>
+          <td colspan="4"><span class="tbar lt">파이프라인 설계 및 실험</span></td>
+          <td colspan="3"><span class="tbar lt">실험 결과 분석 및 논문 작성</span></td>
+          <td colspan="4"></td>
+          <td colspan="2"><span class="tbar lt">데이터 생성 및 논문 리비전</span></td>
+          <td colspan="4"></td>
+          <td colspan="2"><span class="tbar lt">데이터 생성 및 논문 리비전</span></td>
         </tr>
       </tbody>
     </table>
@@ -434,8 +437,7 @@ footer p { color:rgba(255,255,255,0.6); font-size:0.88rem; margin-bottom:2rem; }
       <div class="opt-head">① MobileNetV3-Large · INT8 양자화 적용</div>
       <div class="opt-body">
         <div class="chart-ph">
-          <!-- 교체: <img src="images/mobilenet-chart.png" style="width:100%;height:100%;object-fit:contain;"> -->
-          차트 이미지 → images/mobilenet-chart.png
+          <img src="images/mobilenet_chart.png" style="width:100%;height:100%;object-fit:contain;">
         </div>
         <div style="font-size:0.75rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem;">주요 내용</div>
         <div class="opt-row"><span class="ol">Original → Full PTQ</span><span class="ov dn">98.9% → 70.1%</span></div>
@@ -449,8 +451,7 @@ footer p { color:rgba(255,255,255,0.6); font-size:0.88rem; margin-bottom:2rem; }
       <div class="opt-head">② ConvNeXt-Tiny 백본 교체</div>
       <div class="opt-body">
         <div class="chart-ph">
-          <!-- 교체: <img src="images/convnext-chart.png" style="width:100%;height:100%;object-fit:contain;"> -->
-          차트 이미지 → images/convnext-chart.png
+          <img src="images/convnext_chart.png" style="width:100%;height:100%;object-fit:contain;">
         </div>
         <div style="font-size:0.75rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem;">Throughput (ConvNeXt · INT8)</div>
         <div class="opt-row"><span class="ol">B=1 Throughput</span><span class="ov up">565 → 837 qps (+48%)</span></div>
